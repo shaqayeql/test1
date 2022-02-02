@@ -10,4 +10,14 @@ pip install SpeechToText.py
 ```
 
 ## Documentation
+Before you get started, here's a list of functions you can use:
+### convert_dir_mp3_to_wav
+This function converts mp3 file/files to wav file/files.
+### resample
+This function changes sample rate of file/files to sampleRate.
+### VOSK_wav
+This function convers speech to text.
+### Google_wav
+This function convers speech to text with Google.
+### 
 
