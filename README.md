@@ -12,12 +12,26 @@ pip install SpeechToText.py
 ## Documentation
 Before you get started, here's a list of functions you can use:
 ### convert_dir_mp3_to_wav
-This function converts mp3 file/files to wav file/files.
+This function converts mp3 file/files to wav file/files. To work with other functions, their format should be **.wav** . So you can use thie function.
+If singleFilePath sets False, that means audio_path should be path of one directory(include many audio files). But if it sets True, that means audio_path should be path of single audio file.
+```python
+convert_dir_mp3_to_wav(audio_path , singleFilePath = False)
+```
 ### resample
-This function changes sample rate of file/files to sampleRate.
+This function changes sample rate of file/files to the desired rate. If singleFilePath sets False, that means audio_path should be path of one directory(include many audio files). But if it sets True, that means audio_path should be path of single audio file.
+```python
+resample(directory_resample , sampleRate, singleFilePath = False)
+```
 ### VOSK_wav
-This function convers speech to text.
+Vosk is an offline speech recognition toolkit and this function convers speech to text using Vosk toolkit. filename is the name of file that we want convert it. directory_voice is the directory that our file is there. directory_text is the directory that output text saves there.
+```python
+VOSK_wav(filename , directory_voice , directory_text)
+```
 ### Google_wav
-This function convers speech to text with Google.
+This function convers speech to text with Google Speech Recognition.filename is the name of file that we want convert it. directory_voice is the directory that our file is there. directory_text is the directory that output text saves there.
+```python
+Google_wav(filename , directory_voice , directory_text)
+```
+
 ### 
 
